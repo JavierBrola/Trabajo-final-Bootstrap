@@ -9,42 +9,77 @@
     <title>Document</title>
 </head>
 
-<body>
-    <!-- LOGO DE LA EMPRESA -->
-    <header>
-        <h1 >
-            TECNO <b>RED</b>
-        </h1>
-    </header>
+<body id="inicio"> 
+    <nav id="navegador" class="navbar navbar-expand-lg bg-body-tertiary position-sticky sticky-top">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand" href="./index.html">
+                <h1>
+                    TECNO <b>RED</b>
+                </h1>
+            </a>
 
-    <!-- NAVEGADOR -->
-    <nav>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"         data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-                    Home
-                </button>
-            </li>
+            <button class="navbar-toggler anav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon anav">
 
-            <li class="nav-item" role="presentation">
-                <a href="#ofertas" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-                    Productos
-                </a>
-            </li>
+                </span>
+            </button>
 
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
-                    Contacto
-                </button>
-            </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active anav" aria-current="page" href="#inicio">
+                            Nosotros
+                        </a>
+                    </li>
 
-            <li>
-                <img src="./Imagenes/icon-cart.svg" alt="carrito de compras">
-            </li>
-        </ul>
-    </nav>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle anav" href="#ofertas role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
 
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Samsung
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                   Iphone
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Xiaomi
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link anav" href="#contacto">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="col-xl-8" id="div-nav">
+                    <img src="./Imagenes/icon-cart.svg" alt="carrito de compras" id="imging">
+    
+                    <a href="" id="imging">
+                        <img src="./Imagenes/instagram.png" alt="Acceso a Instagram" id="imging">
+                    </a>
+                </div>
+            </div>
+        </div>
+      </nav>
+
+
+      
     <main>
+        <!-- ACA EMPIEZA NOSOTROS -->
         <section class="container">
             <h2>
                 Te traemos para vos las mejores marcas de celulares al mejor precio en Pehuajó y la zona
@@ -52,7 +87,7 @@
 
             <img src="#" alt="">
 
-            <p>
+            <p class="text-center">
                 Con local ubicado en zona centrica de la ciudad de Pehuajó ofrecemos nuestros servicios de asesoramiento y venta de celulares.<br>
                 Teniendo el mejor precio en toda la zona en efectivo. Tambien ofrecemos financiacion en 6 cuotas sin interes.<br>
                 Nos encontramos a disposicion para consultas por el formulario ubicado al pie de la pagina o en nuestro local ubicado en calle Alfonsin 459 de la ciudad de Pehuajó
@@ -98,13 +133,113 @@
         </div> -->
             
         <!-- SECCION DE OFERTAS -->
-        <section id="ofertas">
-            <h3>
-                OFERTAS DEL MES
-            </h3>
+        <h3 id="ofertas" class="container-fluid">
+            OFERTAS DEL MES
+        </h3>
 
-            <div class="oferta-img">
+        <section class="container">
+           <div class="respimg row">
+                <div class="card col-md-4" style="width: 18rem;">
+                    <img src="./Imagenes/Samsung A52.jpeg" class="card-img-top" alt="Samsung A52">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Samsung A52
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#a52" class="btn btn-primary">
+                            Ver producto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card col-md-4" style="width: 18rem;">
+                    <img src="./Imagenes/Xiaomi redmi 10S.jpeg" class="card-img-top" alt="Xiaomi Redmi Note 10S">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Xiaomi Redmi Note 10S
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#10s" class="btn btn-primary">
+                            Ver producto
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card col-md-4" style="width: 18rem;">
+                    <img src="./Imagenes/mi band 6.jpeg" class="card-img-top" alt="Xiaomi Mi Band 6">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Xiaomi Mi Band 6
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#band" class="btn btn-primary">
+                            Ver producto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION PRODUCTOS -->
+        <h3 class="container-fluid">
+            PRODUCTOS EN STOCK
+        </h3>
+
+        <section class="container">
+            <!-- DIV DE PRODUCTOS -->
+            <div class="respimg row">
                 <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Samsung A03S.jpeg" class="card-img-top" alt="Samsung A03S">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Samsung A03S
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/SamsungA32.jpeg" class="card-img-top" alt="Samsung A32">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Samsung A32
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div id="a52" class="card" style="width: 18rem;">
                     <img src="./Imagenes/Samsung A52.jpeg" class="card-img-top" alt="Samsung A52">
 
                     <div class="card-body">
@@ -117,12 +252,192 @@
                         </p>
 
                         <a href="#" class="btn btn-primary">
-                            Go somewhere
+                            Agregar al carrito
                         </a>
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Samsung A52S.jpeg" class="card-img-top" alt="Samsung A52S">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Samsung A52S
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Samsung A72.jpeg" class="card-img-top" alt="Samsung A72">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Samsung A72
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Samsung S20.jpeg" class="card-img-top" alt="Samsung S20">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Samsung S20
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Samsung S21.jpeg" class="card-img-top" alt="Samsung S21">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Samsung S21
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Samsumg Z flip3.jpeg" class="card-img-top" alt="Samsung Z Flip3">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Samsung Z Flip 3
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Iphone SE.jpeg" class="card-img-top" alt="iPhone SE">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            iPhone SE
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Iphone 11.jpeg" class="card-img-top" alt="iPhone 11">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            iPhone 11
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Iphone 12.jpeg" class="card-img-top" alt="iPhone 12">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            iPhone 12
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Iphone 13 pro max.jpeg" class="card-img-top" alt="iPhone 13 Pro Max">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            iPhone 13 Pro Max
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Xiaomi redmi 10.jpeg" class="card-img-top" alt="Xiaomi Redmi Note 10">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Xiaomi Redmi Note 10
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div id="10s" class="card" style="width: 18rem;">
                     <img src="./Imagenes/Xiaomi redmi 10S.jpeg" class="card-img-top" alt="Xiaomi Redmi Note 10S">
 
                     <div class="card-body">
@@ -135,12 +450,84 @@
                         </p>
 
                         <a href="#" class="btn btn-primary">
-                            Go somewhere
+                            Agregar al carrito
                         </a>
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Xiaomi redmi 11.jpeg" class="card-img-top" alt="Xiaomi Redmi Note 11">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Xiaomi Redmi Note 11
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Xiaomi X3 Pro.jpeg" class="card-img-top" alt="Xiaomi Poco X3 Pro">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Xiaomi Poco X3 Pro
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Xiaomi X3 GT.jpeg" class="card-img-top" alt="Xiaomi Poco x3 GT">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Xiaomi Poco X3 GT
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Xiaomi Poco F3.jpeg" class="card-img-top" alt="Xiaomi Poco F3">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Xiaomi Poco F3
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div id="band" class="card" style="width: 18rem;">
                     <img src="./Imagenes/mi band 6.jpeg" class="card-img-top" alt="Xiaomi Mi Band 6">
 
                     <div class="card-body">
@@ -153,205 +540,117 @@
                         </p>
 
                         <a href="#" class="btn btn-primary">
-                            Go somewhere
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Xiaomi imilab.jpeg" class="card-img-top" alt="Xiaomi Smartwach Imilab">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Xiaomi Smartwach Imilab
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./Imagenes/Xiaomi earbuds.jpeg" class="card-img-top" alt="Xiaomi Redmi earbuds">
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Xiaomi Redmi Earbuds
+                        </h4>
+
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+
+                        <a href="#" class="btn btn-primary">
+                            Agregar al carrito
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCION PRODUCTOS -->
-        <section>
-            <h3>
-                PRODUCTOS EN STOCK
-            </h3>
-
-            <!-- DIV DE PRODUCTOS -->
-            <div class="oferta-img container">
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- SECCION DESCANSO -->
-        <section>
-            <div class="img-des">
-                <img src="./Imagenes/logo1.jpeg" alt="">
+        <section class="container-fluid">
+            <div class="img-des container-fluid d-flex justify-content-center">
+                <img src="./Imagenes/logo1.jpeg" alt="" class="col-md-4">
 
-                <img src="./Imagenes/logo2.jpeg" alt="">
+                <img src="./Imagenes/logo2.jpeg" alt="" class="col-md-4">
 
-                <img src="./Imagenes/logo3.jpeg" alt="">
+                <img src="./Imagenes/logo3.jpeg" alt="" class="col-4"> 
             </div>
 
-            <h2>
+            <h2 id="contacto">
                 Si no se encuentra el celular que buscas o necesitas consejos de comparacion o eleccion de productos no dudes en mandarnos.
             </h2>
         </section>
 
         <!-- SECCION DE FORMULARIO -->
-        <section>
-            <form action="">
-                <label for="name">
+        <form class="container">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">
                     Nombre
                 </label>
-                <input type="text">
 
-                <label for="tel">
-                    Telefono de Contacto
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Juan Perez">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">
+                    Telefono
                 </label>
-                <input type="number">
 
-                <label for="Consulta">
-                    Consulta
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Si quieres que te contactemos por este medio completa el espacio">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">
+                    Email
                 </label>
-                <textarea name="consulta" id="" cols="30" rows="10"></textarea>
 
-                <button>
-                    Enviar!
-                </button>
-            </form>
-        </section>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">
+                    Su consulta no molesta, lo contactaremos cuanto antes
+                </label>
+
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <button>
+                Enviar!
+            </button>
+        </form>
     </main>
 
     <!-- PIE DE PAGINA -->
     <footer>
-        <ul>
-            <li>
-                <a href="#">
-                    Inicio
-                </a>
-
-                <a href="#">
-                    Productos
-                </a>
-
-                <a href="#">
-                    Contacto
-                </a>
-            </li>
-        </ul>
         <p>
+        
             © Javier Brola - Todos los derechos reservados - Desarrollado por Marcelo Javier Brola
+        </p>
+
+        <p>
+            Email: javib.2711@gmail.com
         </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

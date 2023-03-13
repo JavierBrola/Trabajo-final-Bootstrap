@@ -1,24 +1,14 @@
-*{
-    list-style: none;
-}
-
-header{
-    display: flex;
-    justify-content: center;
-    background-color: #142334 ;
-    gap: 2rem;
-    align-items: center;
-    height: 15rem;
-    margin-bottom: 3rem;
-}
-
 h1{
-    font-size: 8rem;
-    text-shadow: 0.4rem 0.4rem 0.1rem  #0b42ac, 0.8rem 0.8rem 0.1rem  #14315e;
+    font-size: 2rem;
+    text-shadow: 0.2rem 0.2rem 0.1rem  #0b42ac, 0.4rem 0.4rem 0.1rem  #14315e;
     color:  #e6ebed;
-    border: 0.5rem solid  #e6ebed;
-    padding: 1rem;
-    border-radius: 1.5rem;
+    border: 0.2rem solid  #e6ebed;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 b{
@@ -26,13 +16,29 @@ b{
     font-weight: 600;
 }
 
-nav{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 2rem;
+#navegador{
+    background-color:#142334 !important;
 }
 
+.anav{
+    color: #eeeeee !important;
+}
 
+.dropdown-item{
+    color: #142334 !important;
+    font-weight: 700;
+}
+
+#imging{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#div-nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+}
 
 h2{
     font-size: 2rem;
@@ -41,40 +47,40 @@ h2{
     text-align: center;
 }
 
-#ofertas{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 7rem;
-    margin-top: 5rem;
-}
-
 h3{
-    font-size: 5rem;
+    font-size: 3rem;
     background-color: #fff159;
-    margin-top: 9rem;
+    margin: 9rem auto;
     text-align: center;
     font-weight: 700;
     color: #142334;
 }
 
-.oferta-img{
-    display: flex;
-    justify-content: space-around;
+.respimg{
+    gap: 7rem;
+    justify-content: center;
+    background-color: #eeeeee;
+    border-radius: 0.5rem;
+    padding: 1rem;
 }
 
+.card{
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0.3rem 0.3rem 1rem #aaaaaa;
+}
 
 .img-des{
-    display: flex;
-    height: 15rem;
-    justify-content: center;
-    padding: 1rem;
-    background-color: #142334;
-    margin-top: 7rem;
+    margin-top: 15rem;
 }
 
 footer{
+    margin-top: 8rem;
     height: 8rem;
     background-color: #142334;
     color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
