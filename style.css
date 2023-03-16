@@ -1,22 +1,28 @@
-h1{
+body{
+    background-color:#14315e;
+    color: #eeeeee;
+}
+
+h1, .comparte{
     font-size: 2rem;
     text-shadow: 0.2rem 0.2rem 0.1rem  #0b42ac, 0.4rem 0.4rem 0.1rem  #14315e;
     color:  #e6ebed;
     border: 0.2rem solid  #e6ebed;
-    padding: 0.5rem;
+    padding: 0.7rem;
     border-radius: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
-}
-
-b{
-    color: red;
     font-weight: 600;
 }
 
-#navegador{
+.sp{
+    color: red;
+}
+
+#navegador, .logogrande{
     background-color:#142334 !important;
 }
 
@@ -29,7 +35,7 @@ b{
     font-weight: 700;
 }
 
-#imging{
+.imging{
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -68,15 +74,26 @@ h3{
     padding: 1rem;
     text-align: center;
     box-shadow: 0.3rem 0.3rem 1rem #aaaaaa;
+    color: #142334;
 }
 
-.img-des{
-    margin-top: 15rem;
+.logogrande{
+    display: flex;
+    margin-top: 15vh;
+}
+
+#contacto{
+    margin: 2rem auto;
+    font-size: 6rem;
+    border: 0.5rem solid  #e6ebed;
+    text-shadow: 0.4rem 0.4rem 0.1rem  #0b42ac, 0.8rem 0.8rem 0.1rem  #14315e;
+    gap: 2.5rem;
+    padding: 1rem;
 }
 
 footer{
-    margin-top: 8rem;
-    height: 8rem;
+    margin-top: 10rem;
+    height: 10rem;
     background-color: #142334;
     color: beige;
     display: flex;
