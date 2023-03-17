@@ -69,7 +69,7 @@
                     <button type="button" class="btn position-relative">
                         <img src="./Imagenes/icon-cart.svg" alt="carrito de compras" class="imging" id="carrito">
 
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="numcarr">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger visually-hidden"  id="numcarr">
                             0
                         </span>
                     </button>
@@ -102,43 +102,34 @@
             </p>
         </section>
 
-        <!-- CARROUSEL DE MARCAS
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <!-- CARROUSEL DE MARCAS -->
+        <div class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./Imagenes/Logo-Apple-iPhone.webp" class="d-block w-100" alt="Logo de Apple">
+                    <img src="./Imagenes/escribir-logo-apple-d.jpg" class="d-block w-100" alt="Logo de Iphone">
                 </div>
-
+            
                 <div class="carousel-item">
-                    <img src="./Imagenes/Samsung-logo.jpg" class="d-block w-100" alt="Logo de Samsung">
+                    <img src="./Imagenes/samsung loguito.jpg" class="d-block w-100" alt="Logo de Samsumg">
                 </div>
-
+            
                 <div class="carousel-item">
-                    <img src="./Imagenes/Logo Xiaomi.png" class="d-block w-100" alt="Logo de Xiaomi">
+                    <img src="./Imagenes/Logo Xiaomi2.avif" class="d-block w-100" alt="Logo de Xiaomi">
                 </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true">
-
-                </span>
-
-                <span class="visually-hidden">
-                    Previous
-                </span>
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            
+                <span class="visually-hidden">Previous</span>
             </button>
 
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true">
-
-                </span>
-
-                <span class="visually-hidden">
-                    Next
-                </span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            
+                <span class="visually-hidden">Next</span>
             </button>
-        </div> -->
+          </div>
             
         <!-- SECCION DE OFERTAS -->
         <h3 id="ofertas" class="container-fluid">
@@ -638,7 +629,7 @@
                 <textarea class="form-control" name="Consulta" id="consul" rows="3"></textarea>
             </div>
 
-            <input class="w-50 btn btn-warning" type="submit" value="Enviar">
+            <input class="w-50 btn btn-danger" type="submit" value="Enviar">
         </form>
     </main>
 

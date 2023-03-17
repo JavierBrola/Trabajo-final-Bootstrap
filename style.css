@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+
 body{
     background-color:#14315e;
     color: #eeeeee;
@@ -9,13 +11,14 @@ h1, .comparte{
     color:  #e6ebed;
     border: 0.2rem solid  #e6ebed;
     padding: 0.7rem;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     font-weight: 600;
+    font-family: 'Comic Neue', cursive;
 }
 
 .sp{
@@ -52,6 +55,8 @@ h2{
     margin-bottom: 5rem;
     text-align: center;
 }
+
+
 
 h3{
     font-size: 3rem;
