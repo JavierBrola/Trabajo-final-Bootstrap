@@ -64,7 +64,7 @@ h2{
 }
 
 #carrusel{
-    width: 60%;
+    width: 70%;
     margin: 7rem auto;
 }
 
@@ -83,6 +83,17 @@ h3{
     background-color: #eeeeee;
     border-radius: 0.5rem;
     padding: 1rem;
+}
+
+.marca{
+    color: red;
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    background-color: #142334;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    
 }
 
 .card{
