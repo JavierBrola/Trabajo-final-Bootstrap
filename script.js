@@ -9,7 +9,5 @@ for (const boton of botones) {
         numcarr.textContent= numero;
         numcarr.classList.remove("visually-hidden");
     });
-
-
 }
 
