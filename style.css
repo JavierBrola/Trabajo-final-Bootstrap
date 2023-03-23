@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 *{
     margin: 0;
@@ -13,7 +13,7 @@ body{
 
 h1, .comparte{
     font-size: 2rem;
-    text-shadow: 0.2rem 0.2rem 0.1rem  #0b42ac, 0.4rem 0.4rem 0.1rem  #14315e;
+    text-shadow: 0.3rem 0.3rem 0.1rem  #0b42ac, 0.4rem 0.4rem 0.1rem  #14315e;
     color:  #e6ebed;
     border: 0.2rem solid  #e6ebed;
     padding: 0.7rem;
@@ -24,7 +24,7 @@ h1, .comparte{
     align-items: center;
     gap: 1rem;
     font-weight: 600;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Anton', sans-serif;
 }
 
 .sp{
@@ -60,6 +60,20 @@ h1, .comparte{
     gap: 3rem;
     align-items: center;
     margin-right: 1rem;
+}
+
+.carryvis{
+    display: flex;
+    flex-direction: column;
+}
+
+.contvisor{
+    width: 300px;
+    background-color: #e6ebed;
+    display: flex;
+    flex-direction: column;
+    color: #142334;
+    margin-right: 1.5rem;
 }
 
 h2{
@@ -118,7 +132,6 @@ h3{
     margin: 2rem auto;
     font-size: 6rem;
     border: 0.5rem solid  #e6ebed;
-    text-shadow: 0.4rem 0.4rem 0.1rem  #0b42ac, 0.8rem 0.8rem 0.1rem  #14315e;
     gap: 2.5rem;
     padding: 1rem;
 }
@@ -138,6 +151,9 @@ footer{
     display: none;
 }
 
+
+/* ----------------BREAKPOINTS--------------------------------- */
+
 @media (max-width:610px) {
     h1{
         font-size: 1.5rem;
@@ -153,7 +169,7 @@ footer{
    }
 
    #div-nav{
-        gap: 0.1rem;
+        gap: 0.5rem;
    }
 
 

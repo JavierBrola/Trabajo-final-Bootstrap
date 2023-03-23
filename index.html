@@ -81,18 +81,51 @@
             </div>
 
             <div id="div-nav">
-                <button type="button" class="btn position-relative">
-                    <img src="./Imagenes/icon-cart.svg" alt="carrito de compras" class="imging" id="carrito">
+                <div class="carryvis">
+                    <button type="button" class="btn position-relative">
+                        <img src="./Imagenes/icon-cart.svg" alt="carrito de compras" class="imging" id="carrito">
 
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger visually-hidden"  id="numcarr">
-                        0
-                    </span>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger visually-hidden"  id="numcarr">
+                            0
+                        </span>
+                    </button>
 
-                    <div>
-                        
+                    <div class="contvisor rounded">
+                        <div id="visor">
+                            <div id="agregarProducto" class="d-flex justify-content-around mt-2">
+                                <p class="cantidad fw-bold col-1 text-center my-auto">
+                                    2
+                                </p>
+            
+                                <p class="modcarr fw-bold col-8 my-auto">
+                                    Xiaomi redmi note 10
+                                </p>
+                                    
+                                <p class="col-2 bg-danger fw-bold p-1 rounded text-center my-auto me-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                      </svg>
+                                </p>    
+                            </div>
+                        </div>
+            
+                            <div class="btn-pago border-top border-secondary d-flex justify-content-end mt-3 p-2">
+                                <p class="fw-bold my-auto col-3">
+                                    Total = 
+                                </p>
+            
+                                <p class="total col-2">
+            
+                                </p>
+            
+                                <button type="button" class="btn btn-warning fw-bold p-2 my-auto">
+                                    Ir a Forma de Pago
+                                </button>
+                            </div>
                         
                     </div>
-                </button>
+                   
+                </div>
 
               
 
@@ -108,8 +141,15 @@
 
       
     <main>
-        <!-- ACA EMPIEZA NOSOTROS -->
-        <section class="container">
+
+        
+
+
+
+        <!-- ACA EMPIEZA NOSOTROS----------------------------- -->
+
+
+        <section class="container">   
             <h2>
                 Te traemos para vos las mejores marcas de celulares al mejor precio en Pehuajó y la zona
             </h2>
@@ -225,7 +265,7 @@
 
         
 
-        <section class="container">
+        <section id="secc-prod" class="container">
             <!-- DIV DE PRODUCTOS -->
             <div class="respimg row mb-3">
                 <!-- ------------------------------------- -->
@@ -238,7 +278,7 @@
                     <img src="./Imagenes/Samsung A03S.jpeg" class="card-img-top" alt="Samsung A03S">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Samsung A03S
                         </h4>
 
@@ -256,7 +296,7 @@
                     <img src="./Imagenes/SamsungA32.jpeg" class="card-img-top" alt="Samsung A32">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Samsung A32
                         </h4>
 
@@ -274,7 +314,7 @@
                     <img src="./Imagenes/Samsung A52.jpeg" class="card-img-top" alt="Samsung A52">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Samsung A52
                         </h4>
 
@@ -292,7 +332,7 @@
                     <img src="./Imagenes/Samsung A52S.jpeg" class="card-img-top" alt="Samsung A52S">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Samsung A52S
                         </h4>
 
@@ -310,7 +350,7 @@
                     <img src="./Imagenes/Samsung A72.jpeg" class="card-img-top" alt="Samsung A72">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Samsung A72
                         </h4>
 
@@ -328,7 +368,7 @@
                     <img src="./Imagenes/Samsung S20.jpeg" class="card-img-top" alt="Samsung S20">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Samsung S20
                         </h4>
 
@@ -346,7 +386,7 @@
                     <img src="./Imagenes/Samsung S21.jpeg" class="card-img-top" alt="Samsung S21">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Samsung S21
                         </h4>
 
@@ -364,7 +404,7 @@
                     <img src="./Imagenes/Samsumg Z flip3.jpeg" class="card-img-top" alt="Samsung Z Flip3">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Samsung Z Flip 3
                         </h4>
 
@@ -389,7 +429,7 @@
                     <img src="./Imagenes/Iphone SE.jpeg" class="card-img-top" alt="iPhone SE">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             iPhone SE
                         </h4>
 
@@ -407,7 +447,7 @@
                     <img src="./Imagenes/Iphone 11.jpeg" class="card-img-top" alt="iPhone 11">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             iPhone 11
                         </h4>
 
@@ -425,7 +465,7 @@
                     <img src="./Imagenes/Iphone 12.jpeg" class="card-img-top" alt="iPhone 12">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             iPhone 12
                         </h4>
 
@@ -443,7 +483,7 @@
                     <img src="./Imagenes/Iphone 13 pro max.jpeg" class="card-img-top" alt="iPhone 13 Pro Max">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             iPhone 13 Pro Max
                         </h4>
 
@@ -468,7 +508,7 @@
                     <img src="./Imagenes/Xiaomi redmi 10.jpeg" class="card-img-top" alt="Xiaomi Redmi Note 10">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Xiaomi Redmi Note 10
                         </h4>
 
@@ -486,7 +526,7 @@
                     <img src="./Imagenes/Xiaomi redmi 10S.jpeg" class="card-img-top" alt="Xiaomi Redmi Note 10S">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Xiaomi Redmi Note 10S
                         </h4>
 
@@ -504,7 +544,7 @@
                     <img src="./Imagenes/Xiaomi redmi 11.jpeg" class="card-img-top" alt="Xiaomi Redmi Note 11">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Xiaomi Redmi Note 11
                         </h4>
 
@@ -522,7 +562,7 @@
                     <img src="./Imagenes/Xiaomi X3 Pro.jpeg" class="card-img-top" alt="Xiaomi Poco X3 Pro">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Xiaomi Poco X3 Pro
                         </h4>
 
@@ -540,7 +580,7 @@
                     <img src="./Imagenes/Xiaomi X3 GT.jpeg" class="card-img-top" alt="Xiaomi Poco x3 GT">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Xiaomi Poco X3 GT
                         </h4>
 
@@ -558,7 +598,7 @@
                     <img src="./Imagenes/Xiaomi Poco F3.jpeg" class="card-img-top" alt="Xiaomi Poco F3">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Xiaomi Poco F3
                         </h4>
 
@@ -576,7 +616,7 @@
                     <img src="./Imagenes/mi band 6.jpeg" class="card-img-top" alt="Xiaomi Mi Band 6">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Xiaomi Mi Band 6
                         </h4>
 
@@ -594,7 +634,7 @@
                     <img src="./Imagenes/Xiaomi imilab.jpeg" class="card-img-top" alt="Xiaomi Smartwach Imilab">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Xiaomi Smartwach Imilab
                         </h4>
 
@@ -612,7 +652,7 @@
                     <img src="./Imagenes/Xiaomi earbuds.jpeg" class="card-img-top" alt="Xiaomi Redmi earbuds">
 
                     <div class="card-body">
-                        <h4 class="card-title">
+                        <h4 class="card-title modelo">
                             Xiaomi Redmi Earbuds
                         </h4>
 
