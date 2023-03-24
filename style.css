@@ -74,6 +74,10 @@ h1, .comparte{
     flex-direction: column;
     color: #142334;
     margin-right: 1.5rem;
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    z-index: 100;
 }
 
 h2{
@@ -119,8 +123,12 @@ h3{
 .card{
     padding: 1rem;
     text-align: center;
-    box-shadow: 0.3rem 0.3rem 1rem #aaaaaa;
+   
     color: #142334;
+}
+
+.card:hover{
+    box-shadow: 0.3rem 0.3rem 1rem #aaaaaa;
 }
 
 .logogrande{
