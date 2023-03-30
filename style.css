@@ -128,7 +128,16 @@ h3{
 }
 
 .card:hover{
-    box-shadow: 0.3rem 0.3rem 1rem #aaaaaa;
+    box-shadow: 0 0 1rem #666666;
+    scale: 1.05 ;
+}
+
+.card-img-top{
+    cursor: pointer;;
+}
+
+.card-img-top:active{
+    scale: 1.5;
 }
 
 .logogrande{
