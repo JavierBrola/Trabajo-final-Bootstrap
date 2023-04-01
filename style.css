@@ -13,7 +13,7 @@ body{
 
 h1, .comparte{
     font-size: 2rem;
-    text-shadow: 0.3rem 0.3rem 0.1rem  #0b42ac, 0.4rem 0.4rem 0.1rem  #14315e;
+    text-shadow: 0.3rem 0.3rem 0.2rem  #0b42ac, 0.6rem 0.6rem 0.1rem  #14315e;
     color:  #e6ebed;
     border: 0.2rem solid  #e6ebed;
     padding: 0.7rem;
@@ -112,12 +112,12 @@ h3{
 .marca{
     color: red;
     display: flex;
-    font-size: 2.5rem;
+    font-size: 3rem;
     justify-content: center;
     background-color: #142334;
     border-radius: 0.4rem;
     padding: 0.5rem;
-    
+    font-weight: 500;
 }
 
 .card{
